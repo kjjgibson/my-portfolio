@@ -4,30 +4,51 @@ import PropTypes from "prop-types";
 import { FaArrowDown } from "react-icons/fa/";
 
 const Hero = props => {
-  const { scrollToContent, backgrounds, theme } = props;
+  const { scrollToContent, mountains, theme } = props;
 
   return (
     <React.Fragment>
       <section className="hero">
+        <span className="circle" />
         <h1>the dev down under</h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button>
+        <section className="mountains" />
       </section>
 
       {/* --- STYLES --- */}
       <style jsx>{`
+        .circle {
+          background: #ed5aa1;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          position: fixed;
+          margin-top: -100px;
+        }
+
+        .mountains {
+          align-items: center;
+          background-image: url(${mountains.mobile});
+          background-size: cover;
+          width: 100%;
+          z-index: 1;
+          height: 100%;
+          position: absolute;
+        }
+
         .hero {
           align-items: center;
           background: ${theme.hero.background};
-          background-image: url(${backgrounds.mobile});
-          background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           min-height: 100vh;
           height: 100px;
+          z-index: 2;
+          width: 100%;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
@@ -39,6 +60,10 @@ const Hero = props => {
           color: ${theme.hero.h1.color};
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
+          z-index: 3;
+          position: absolute;
+          top: 200px;
+          padding: ${theme.space.inset.l};
 
           :global(strong) {
             position: relative;
@@ -67,6 +92,9 @@ const Hero = props => {
           width: ${theme.space.xl};
           height: ${theme.space.xl};
           margin-top: 700px;
+          z-index: 2;
+          position: absolute;
+          bottom: 50px;
 
           &:focus {
             outline-style: none;
@@ -98,8 +126,8 @@ const Hero = props => {
         }
 
         @from-width tablet {
-          .hero {
-            background-image: url(${backgrounds.tablet});
+          .mountains {
+            background-image: url(${mountains.tablet});
           }
 
           h1 {
@@ -113,8 +141,8 @@ const Hero = props => {
         }
 
         @from-width desktop {
-          .hero {
-            background-image: url(${backgrounds.desktop});
+          .mountains {
+            background-image: url(${mountains.desktop});
           }
 
           h1 {
@@ -133,7 +161,7 @@ const Hero = props => {
 
 Hero.propTypes = {
   scrollToContent: PropTypes.func.isRequired,
-  backgrounds: PropTypes.object.isRequired,
+  mountains: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired
 };
 

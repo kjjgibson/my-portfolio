@@ -180,6 +180,7 @@ class Header extends React.Component {
               width: 100%;
               justify-content: space-between;
               transition: padding 0.5s;
+              z-index: 10;
 
               &.fixed {
                 height: ${theme.header.height.fixed};
@@ -189,7 +190,7 @@ class Header extends React.Component {
                 position: fixed;
                 top: 0;
                 width: 100%;
-                z-index: 1;
+                z-index: 11;
 
                 h1 {
                   margin: ${theme.space.stack.xxs};

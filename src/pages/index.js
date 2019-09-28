@@ -17,13 +17,13 @@ class IndexPage extends React.Component {
     const {
       data: {
         posts: { edges: posts = [] },
-        bgDesktop: {
+        mountainsDesktop: {
           resize: { src: desktop }
         },
-        bgTablet: {
+        mountainsTablet: {
           resize: { src: tablet }
         },
-        bgMobile: {
+        mountainsMobile: {
           resize: { src: mobile }
         },
         site: {
@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
       }
     } = this.props;
 
-    const backgrounds = {
+    const mountains = {
       desktop,
       tablet,
       mobile
@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
       <React.Fragment>
         <ThemeContext.Consumer>
           {theme => (
-            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+            <Hero scrollToContent={this.scrollToContent} mountains={mountains} theme={theme} />
           )}
         </ThemeContext.Consumer>
 
@@ -109,17 +109,17 @@ export const query = graphql`
         }
       }
     }
-    bgDesktop: imageSharp(fluid: { originalName: { regex: "/heroImage/" } }) {
+    mountainsDesktop: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
       resize(width: 1200, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    bgTablet: imageSharp(fluid: { originalName: { regex: "/heroImage/" } }) {
+    mountainsTablet: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
       resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    bgMobile: imageSharp(fluid: { originalName: { regex: "/heroImage/" } }) {
+    mountainsMobile: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
       resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
         src
       }

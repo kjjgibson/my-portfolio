@@ -26,6 +26,9 @@ const Blog = props => {
       <style jsx>{`
         .main {
           padding: 0 ${theme.space.inset.default};
+          background: white;
+          z-index: 10;
+          position: relative;
         }
 
         ul {
