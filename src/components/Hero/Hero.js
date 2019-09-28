@@ -10,6 +10,12 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <span className="circle" />
+        <div className="x1">
+          <div className="cloud" />
+        </div>
+        <div className="x2">
+          <div className="cloud" />
+        </div>
         <h1>the dev down under</h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
@@ -26,6 +32,92 @@ const Hero = props => {
           border-radius: 50%;
           position: fixed;
           margin-top: -100px;
+        }
+
+        @-webkit-keyframes animateCloud {
+          0% {
+            margin-left: -150px;
+          }
+          100% {
+            margin-left: 50%;
+          }
+        }
+
+        @-moz-keyframes animateCloud {
+          0% {
+            margin-left: -150px;
+          }
+          100% {
+            margin-left: 50%;
+          }
+        }
+
+        @keyframes animateCloud {
+          0% {
+            margin-left: -150px;
+          }
+          100% {
+            margin-left: 50%;
+          }
+        }
+
+        .x1 {
+          -webkit-animation: animateCloud 120s linear infinite;
+          -moz-animation: animateCloud 120s linear infinite;
+          animation: animateCloud 120s linear infinite;
+
+          -webkit-transform: scale(0.65);
+          -moz-transform: scale(0.65);
+          transform: scale(0.65);
+          position: fixed;
+        }
+
+        .x2 {
+          -webkit-animation: animateCloud 200s linear infinite;
+          -moz-animation: animateCloud 200s linear infinite;
+          animation: animateCloud 200s linear infinite;
+
+          -webkit-transform: scale(0.3);
+          -moz-transform: scale(0.3);
+          transform: scale(0.3);
+          position: fixed;
+        }
+
+        .cloud {
+          background: #000;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          height: 90px;
+          width: 310px;
+        }
+
+        .cloud:after,
+        .cloud:before {
+          background: #000;
+          content: "";
+          position: absolute;
+          z-index: -1;
+        }
+
+        .cloud:after {
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          height: 100px;
+          left: 50px;
+          top: -50px;
+          width: 100px;
+        }
+
+        .cloud:before {
+          -webkit-border-radius: 200px;
+          -moz-border-radius: 200px;
+          border-radius: 200px;
+          width: 180px;
+          height: 180px;
+          right: 50px;
+          top: -90px;
         }
 
         .mountains {
