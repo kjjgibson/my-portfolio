@@ -9,9 +9,7 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>
-          This is a demo site of&nbsp;the <strong>heroBlog</strong> GatsbyJS starter
-        </h1>
+        <h1>the dev down under</h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button>
@@ -68,6 +66,7 @@ const Hero = props => {
           cursor: pointer;
           width: ${theme.space.xl};
           height: ${theme.space.xl};
+          margin-top: 700px;
 
           &:focus {
             outline-style: none;

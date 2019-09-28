@@ -1,27 +1,23 @@
 ---
-title: About
+title: About Me
 ---
 
-This is a demo site of the [HeroBlog](https://github.com/greglobinski/gatsby-starter-hero-blog), a [GatsbyJS](https://www.gatsbyjs.org/) starter.
+![Me](./me.jpg)
 
-### Features:
+Experienced `full-stack` Software Engineer with practical experience developing `React`, `React Native`, `Android`, `iOS`, `Node.js`, and `Ruby on Rails` applications. Strong engineering professional with a Bachelor of Computing and Mathematical Sciences (Hons) focused in Computer Science from University of Waikato.
 
-* Easy editable content in **Markdown** files (posts, pages and parts)
-* **CSS** with `styled-jsx` and `PostCSS`
-* **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
-* **Social** sharing (Twitter, Facebook, Google, LinkedIn)
-* **Comments** (Facebook)
-* **Images** lazy loading and `webp` support (gatsby-image)
-* Post **categories** (category based post list)
-* Full text **searching** (Algolia)
-* **Contact** form (Netlify form handling)
-* **RSS** feed
-* 100% **PWA** (manifest.webmanifest, offline support, favicons)
-* Google **Analytics**
-* App **favicons** generator (node script)
-* Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
-* React **v.16** (gatsby-plugin-react-next)
-* **Components** lazy loading (social sharing)
-* **ESLint** (google config)
-* **Prettier** code styling
-* Webpack `BundleAnalyzerPlugin`
+# Skills
+
+- Strong programming knowledge in Javascript, Java, Ruby, and Objective-C
+- Practical experience developing and releasing React Native, Android (native) and iOS (native) Applications
+- Front end development with React, JavaScript, HTML, and CSS
+- Backend application development Node.js and Ruby on Rails
+- Software architecture and devops
+- Test Driven Development
+- Certified Scrum Master
+
+I'm passionate about software and technology and am driven by the thrill of solving complex problems and developing software that can help improve the life of others.
+
+My dream is to work for an organisation where I can make a difference by using my creativity to develop and improve technologies that have a direct effect on how people access and use information.
+
+I love learning new languages and travelling the world, adventuring outdoors, hiking, playing beach volleyball, and working on side projects.
