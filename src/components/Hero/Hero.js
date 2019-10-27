@@ -16,7 +16,7 @@ const Hero = props => {
         <div className="x2">
           <div className="cloud" />
         </div>
-        <h1>the dev down under</h1>
+        <h1>the engineer down under</h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button>
