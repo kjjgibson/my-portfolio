@@ -132,7 +132,7 @@ icon:
 hero:
   h1:
     size: *font-size-xxl
-    color: *color-white
+    color: white
     lineHeight: *font-line-height-xs
   background: "#181818"
 blog:

@@ -109,17 +109,17 @@ export const query = graphql`
         }
       }
     }
-    mountainsDesktop: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
+    mountainsDesktop: imageSharp(fluid: { originalName: { regex: "/snowTrees/" } }) {
       resize(width: 1200, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    mountainsTablet: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
+    mountainsTablet: imageSharp(fluid: { originalName: { regex: "/snowTrees/" } }) {
       resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    mountainsMobile: imageSharp(fluid: { originalName: { regex: "/mountains/" } }) {
+    mountainsMobile: imageSharp(fluid: { originalName: { regex: "/snowTrees/" } }) {
       resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
         src
       }
